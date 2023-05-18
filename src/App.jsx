@@ -1,12 +1,10 @@
-import { Header } from "./components/Header";
-import { headerData } from "./data/data";
-import { HeaderContext } from "./context/HeaderContext";
+import { Header } from './components/Header';
+import { headerData } from './data/data';
 import './assets/Styles/reset.min.sass';
+import './assets/Styles/base.sass'
 function App() {
   return(
-    <HeaderContext.Provider value={headerData}>
-      <Header />
-    </HeaderContext.Provider>
+    <Header headerData={headerData} />
   )
 }
 
